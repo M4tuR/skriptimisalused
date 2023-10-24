@@ -1,0 +1,6 @@
+#! /bin/bash
+
+#väljastab kasutajale tervitust
+echo -n "Tere, "
+echo -n $(whoami)
+echo "!"
