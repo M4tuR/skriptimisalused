@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# peidetud tekst trellide pärast
+
+pwd
+
+whoami
