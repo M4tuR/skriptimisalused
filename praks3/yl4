@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#Küsib palju reisijaid tuleb
+echo "Kui palju reisijaid tuleb?"
+#Loeb useri poolt sisestatud reisijate arvu
+read reisijaid
+#Küsib kohtade arvu bussis
+echo "Kohtade arv bussis"
+#Loeb useri poolt sisestatud bussi kotade arvu
+read kohad
+#Arutab mittu bussi vaja läheb
+busse=`echo $reisijaid/$kohad | bc`
+#Arvutab mittu inimest maha jääb
+maha_jaanud=`echo  $reisijaid%$kohad | bc`
+#Väljastab arvutuste põhjal kui palju busse vaja läheb
+echo "Busse vaja: $busse"
+#Väljastab arvutuste põhjal kui mittu inimest maha jääb
+echo "Inimesi jääb maha: $maha_jaanud"
+
