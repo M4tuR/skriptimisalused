@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#Väljastab küsimuse  " sisesta oma ees- ja perenimi"
+echo -n "Sisesta oma ees- ja perenimi: "
+#Loeb sinu kirjutatud ees- ja perenime
+read eesnimi perenimi
+#Väljastab  teksti "Sinu eesnimi on.. ja perenimi on.. " koos Useri pool antud andmetega
+echo "Sinu eesnimi on $eesnimi ja perenimi on $perenimi"
