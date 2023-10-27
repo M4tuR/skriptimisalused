@@ -1,0 +1,16 @@
+#! /bin/bash
+#Jätab esimese rea tühjaks
+echo 
+#Prindib  " Today is "
+echo -n "Today is "
+#Väljastab nädalapäeva, kuu ja kuupäeva, aasta. Ja kõik need suure algus tähega
+echo  $(date +"%A, %B %d, %Y") | awk '{ for(i=1; i<=NF; i++) $i=toupper(substr($i,1,1)) tolower(substr($i,2)); }1' 
+# väljastab "Timi is" ja täpse kellaaja 
+echo $(date +"Time is %H:%M")
+#Jätab tühja rea
+echo 
+#Väljastab  "Calendar of  kuu ja aasta"
+echo $(date +"Calendar of %B %Y")
+#Väljastab ilusa kalendri
+(cal | tail -n 7)
+
