@@ -2,7 +2,9 @@
 
 #väljastab kasutajale tervitust
 echo -n "Tere, "
+#Tekita kasutaja nime vastava käsu kombinatsiooniga ning väljasta ta reavahetuseta  ja teeb algus tähe suureks
 VAR_1="$(whoami)"
 echo -n  ${VAR_1^} 
+#Väljastab „!“  
 echo "!"
 
