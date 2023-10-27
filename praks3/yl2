@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#Muutuja aasta
+aasta=2016
+#Muutuja president
+president="Kersti Kaljulaid"
+#Muutuja lause keskosa
+lause_keskosa=". aastal valiti Eesti presidendiks "
+#funktsioon mis võimaldab  teisendada arvu sõneks
+number_to_string(){
+local number=$1
+echo "$number"
+} 
+#Muutuja mis  ühendab kõik muutujad endasse õiges järjekorras
+lause="$(number_to_string $aasta)$lause_keskosa$president"
+#Väljastab  lause
+echo $lause
