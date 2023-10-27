@@ -1,10 +1,20 @@
 #!/bin/bash
 
+#Küsib,et user sisestaks ainepunktide arvu
 echo -n " Sisesta ainepunktide arv:"
+#Loeb useri poolt antud andmed
 read ainepunktid 
+#Küsib,et user sisestaks nädalate arvu
 echo -n " Sisesta nädalate arv:"
+#Loeb nädalate arvud
 read nadalad 
+#Arvutab välja useri poolt antud andmetega  ühe nädala eeldatava ajakulu
 aeg=`echo "scale=1;78/10" | bc`
+#väljastab arvutuse vastuse ilma ümardamisseta
 echo $aeg
+#Ümardab eelnevalt saatud vastuse
 aeg_ymarda="`echo "($aeg+0.9)/1" | bc`"
+#Väljastab ümardatud vastuse
 echo $aeg_ymarda
+echo
+echo " Aitäh, et kasutasid Härra Matu loodud programmi :D"
