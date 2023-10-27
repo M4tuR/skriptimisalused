@@ -2,5 +2,7 @@
 
 #väljastab kasutajale tervitust
 echo -n "Tere, "
-echo -n $(whoami)
+VAR_1="$(whoami)"
+echo -n  ${VAR_1^} 
 echo "!"
+
