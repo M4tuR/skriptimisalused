@@ -11,6 +11,6 @@ echo $(date +"Time is %H:%M")
 echo 
 #Väljastab  "Calendar of  kuu ja aasta"
 echo $(date +"Calendar of %B %Y")
-#Väljastab ilusa kalendri
+#Väljastab ilusa kalendri!
 (cal | tail -n 7)
 
