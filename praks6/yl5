@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# algarvu tuvastamine
+#algarvu tuvastamine
 
 for arv in {1..20}; do
-# kontrollime
+#kontrollime
 if [ $arv -eq 0 -o $arv -eq 1 ]; then
 echo "$arv - ei ole algarv"
 else
@@ -14,6 +14,7 @@ do
 jagaja=$(($jagaja + 1))
 jaak=$(($arv % $jagaja))
 done
+#Vastuse andmine
 if [ $arv -eq $jagaja ]; then
 echo "$arv - on algarv"
 else
