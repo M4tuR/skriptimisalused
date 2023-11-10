@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#arvutab suvaliselt sisestatud arvu numbrite summa ja väljastab selgitava teksti
+summa=0
+echo -n "Sisesta suvaline täisarv: "
+read arv
+VAR_1=$arv
+while [ $arv -ne 0 ]
+do
+jaak=$(($arv % 10))
+summa=$(($summa + $jaak))
+arv=$(($arv / 10))
+done
+echo "Arvu $VAR_1  numbrite summa on $summa"
